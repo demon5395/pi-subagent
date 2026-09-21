@@ -1,0 +1,28 @@
+{
+  "name": "pi-subagent",
+  "version": "0.5.0",
+  "description": "Subagent SDK — 通过 createAgentSession + SessionManager.inMemory() 替代子进程 spawn，实现功能完全对等的 subagent 插件",
+  "keywords": [
+    "pi-package"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "pi": {
+    "skills": [
+      "./skills"
+    ],
+    "extensions": [
+      "./subagent",
+      "./watchdog"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
